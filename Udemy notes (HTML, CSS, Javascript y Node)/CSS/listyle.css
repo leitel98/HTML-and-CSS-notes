@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(187, 183, 183);
+}
+
+/* ul li{ */
+    /* list-style-type: lower-alpha;
+} */
+
+ul {
+    list-style-type: none;
+    background-color: #fff;
+    border: solid 1px rgb(139, 139, 139);
+    border-radius: 4px;
+    padding-left: 0px;
+}
+
+li {
+    border-bottom: solid 1px rgb(139, 139, 139);
+    padding: 15px;
+}
