@@ -1,0 +1,12 @@
+body {
+    background-color: lightgray;
+}
+
+.fondo {
+    /* principal diferencia, no color, image */
+    /* parametros de direccion, color1 y color 2 o mas*/
+    /* colores pueden usar formato rgba */
+    /* la direccion se puede dar en angulos, to dir y combinar */
+    background-image: linear-gradient(to right bottom, red, blue);
+    /* se puede agregar repeating a linear gradient pero es color % */
+}

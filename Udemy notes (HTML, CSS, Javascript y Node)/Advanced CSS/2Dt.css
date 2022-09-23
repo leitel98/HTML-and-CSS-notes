@@ -1,0 +1,24 @@
+body {
+    background-color: lightgray;
+}
+
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    /* transform se le aplica a un display block como un p */
+    transform: rotate(20deg);
+    /* hor luego vert */
+    transform: translate(50px, 10px);
+    /* skew es retorcer y recive un angulo */
+    transform: skew(25deg, 10deg);
+}
+
+.box:hover {
+    /* ancho y alto, exp en % */
+    transform: scale(2,2);
+}

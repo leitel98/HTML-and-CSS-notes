@@ -1,0 +1,19 @@
+body {
+    background-color: lightgray;
+}
+
+.fondo {
+    /* forzamos el alto al mismo que la imagen, 300 px */
+    height: 400px;
+    /* background: me sirve para dar todos los comandos menos size de abajo en una sola linea */
+    background-color: #f00;
+    /* el bg image tiene el mismo alto que el contenido del div */
+    background-image: url('http://placekitten.com/200/300');
+    /* -x o -y para decidir donde repetir */
+    background-repeat: no-repeat;
+    /* default left top */
+    background-position: right bottom;
+    /* para el scroll, fixed hace que si bajo se queda */
+    background-attachment: scroll;
+    background-size: cover;
+}

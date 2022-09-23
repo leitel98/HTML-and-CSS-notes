@@ -1,0 +1,12 @@
+body {
+    background-color: lightgray;
+}
+
+.fondo {
+    /* 255 max rojo, verde, azul, opacidad 0 a 1 */
+    background-color: rgba(0,0,255,0.3);
+    /* formato hsl: hue, saturation, light (color hasta 255 y % para los otros dos */
+    /* se puede incluir parametro alfa de 0 a 1 para transparencia */
+    /* se puede usar opacity pero afecta a todo el elemento no solo al fondo */
+    
+}
