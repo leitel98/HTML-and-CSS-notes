@@ -1,0 +1,10 @@
+body {
+    background-color: #ccc;
+}
+
+#over {
+    width: 100px;
+    height: 100px;
+    /* hiden oculta lo que no se alcanza a mostrar, scroll agrega barras pa scrollear y auto las que son necesarias, se puede forzar con overflow y o x*/
+    overflow: auto;
+}

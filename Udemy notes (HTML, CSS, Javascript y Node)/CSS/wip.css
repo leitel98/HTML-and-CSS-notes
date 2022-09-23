@@ -1,0 +1,19 @@
+body {
+    background-color: #ccc;
+}
+
+p {
+    max-width: 350px;
+    /* width solo es menos potente */
+    background-color: #f00;
+    margin:auto;
+    /* position neutra es static, la relativa es con respecto al mismo */
+    /* fixed deja el contenido fijo en la pantalla */
+    position: relative;
+    /* mover con left top bottom o right */
+    left: 15px;
+}
+
+div {
+    position: fixed;
+}
