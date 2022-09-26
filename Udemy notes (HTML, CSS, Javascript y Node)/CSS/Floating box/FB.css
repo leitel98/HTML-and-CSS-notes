@@ -1,0 +1,40 @@
+body {
+    background-color: rgba(199, 199, 196, 0.651);
+}
+
+.box {
+    background-color: #fff;
+    border-right: 1px solid rgb(199, 193, 193);
+    border-bottom: 1px solid rgb(199, 193, 193);
+    border-left: 1px solid rgb(199, 193, 193);
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.header {
+    padding: 10px; 
+    border-bottom: solid 1px rgb(189, 186, 186);
+}
+
+.footer {
+    padding: 10px; 
+    border-top: solid 1px rgb(189, 186, 186);
+}
+
+.first {
+    background-color: #0090ff;
+    padding: 5px;
+    border: 0px;
+    color:#fff
+}
+
+.second {
+    background-color: #aaa;
+    padding: 5px;
+    border: 0px;
+    color:#fff
+}

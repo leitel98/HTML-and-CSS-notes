@@ -1,0 +1,12 @@
+body {
+    background-color: #ddd;
+}
+
+p {
+    display: inline; 
+    /* tb le puedo poner block */
+}
+
+#inv {
+    display: none;
+}
