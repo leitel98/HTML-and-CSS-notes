@@ -1,0 +1,35 @@
+body {
+    background-color: lightgray;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 'header header'
+                         'content sidebar'
+                         ' footer footer';
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    /* para las grillas implicitas se usara esto */
+    grid-auto-rows: 140px;
+    /* flow por defecto tiene row, se le puede poner column */
+    grid-auto-flow: row;
+    /* por defecto justify es start, end es a la derecha y stretch usa todo el alto
+    y ancho, center centra */
+    justify-items: stretch;
+    /* no start por defecto tiene stretch, center centra eje hor */
+    align-items: stretch;
+}
+
+.header {
+    grid-column: col-inicio / col-fin 3;
+    grid-row: row-inicio / row-fin 3;
+}
+
+.red {
+    background-color: red;
+}
+/* se asigna una clase a parte para alinear un elemento unico */
+.item-1 {
+    justify-self: center;
+    align-self: center;
+}

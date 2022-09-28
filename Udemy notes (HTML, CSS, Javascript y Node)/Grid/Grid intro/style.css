@@ -1,0 +1,13 @@
+body {
+    background-color: lightgray;
+}
+/* sistema de celdas que nos permite distribuir el contenido */
+/* puede ser en columnas, filas, cambiar altura, ancho, poscicion o predefinidos */
+.grid {
+    display: inline-grid;
+    /* grid displays with whole space, inline-grid displays as width as its widest elements*/
+}
+
+.element {
+    background-color: red;
+}
