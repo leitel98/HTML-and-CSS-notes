@@ -1,0 +1,17 @@
+body {
+    width: 200px;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 200px;
+    /* mismas propiedades flex start, end, center,
+    space between, around y evenly */
+    align-content: space-around;
+}
+
+.red {
+    background-color: red;
+}

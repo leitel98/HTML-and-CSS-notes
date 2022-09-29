@@ -1,0 +1,21 @@
+body {
+    width: 200px;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+}
+
+.primero {
+    /* valor inicial de order es 0 siempre, si yo lo 
+    cambio a otro mayor que 0 lo va a mandar al final,
+    como uno es mayor que 0 lo manda despues de esos*/
+    order: 1;
+}
+
+.tercero {
+    /* funciona con negativos */
+    order: -1;
+}

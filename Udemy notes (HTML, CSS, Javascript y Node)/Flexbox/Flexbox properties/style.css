@@ -1,0 +1,30 @@
+body {
+    width: 200px;
+}
+
+.flex {
+    display: flex;
+    /* row default, reverse cambia el sentido, columna hacia abajo
+    e igual tiene reverse pero no lo baja a menos que defina 
+    el alto 
+    flex-direction: row; */
+    /*wrap lo baja, -reverse parte de abajo hacia arriba
+    flex-wrap: wrap;*/
+
+    /* flow contiene direction y wrap */
+    flex-flow: row wrap;
+
+    /* ---Justify y align items----- */
+    /* flex-start, flex-end, center, space-between
+    space-around o space evenly */
+    justify-content: space-evenly;
+
+    /* flex start default, space end los baja en su fila
+    center los centra en su fila, stretch los estira para
+    que usen el alto completo */
+    align-items: flex-start;
+}
+
+.red {
+    background-color: red;
+}
