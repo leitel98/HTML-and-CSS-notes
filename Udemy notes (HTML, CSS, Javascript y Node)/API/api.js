@@ -1,21 +1,26 @@
-// asignacion de framework de express, require nos permite importar dependencias que instalemos
-const express = require('express')
-// se creara a partir de la exe de express
-const user = require('./user.controller')
+const express = require('express')// asignacion de framework de express, require nos permite importar dependencias que instalemos
+const mongoose = require('mongoose')
+const user = require('./user.controller')// se creara a partir de la exe de express
 const app = express()
-// se ejecuta en este puerto
-const port = 3000
+const port = 3000// se ejecuta en este puerto
 
-// este get es para la raiz
-app.get('/', user.list)
-app.post('/', user.create)
-app.get('/:id', user.get)
-// el id dice que es un dato variable en la ruta, esta estructura es importante
-app.put('/:id', user.update)
-app.patch('/:id', user.update)
-app.delete('/:id', user.destroy)
-//manejo de rutas indef
-app.get('*',(req, res) => {
+app.use(express.json())
+mongoose.connect('mongodb+srv://leitel:narreputo1@practicecluster.ma2pktt.mongodb.net/miapp?retryWrites=true&w=majority')
+
+app.get('/users', user.list)// este get es para la raiz
+app.post('/users', user.create)
+app.get('/users/:id', user.get)
+app.put('/users/:id', user.update)// el id dice que es un dato variable en la ruta, esta estructura es importante
+app.patch('/users/:id', user.update)
+app.delete('/users/:id', user.destroy)
+
+app.use(express.static('app'))//usa todos los archivos de la carpeta
+
+app.get('/', (req, res) => {
+    console.log(__dirname)
+    res.sendFile(`${__dirname}/index.html`)//manda donde nos encontramos
+})
+app.get('*',(req, res) => {//manejo de rutas indef
     res.status(404).send('This page does not exist')
 })
 
