@@ -34,4 +34,4 @@ distintas, esto se corrige con los esquemas de una libreria mongoose
 enterprise es pagada
 mongo atlas es en la nube, contiene bases de datos de mongo db gratis hasta 500mb
 
-mongodb+srv://leitel:<password>@practicecluster.ma2pktt.mongodb.net/?retryWrites=true&w=majority
+mongodb+srv://leitel:narreputo1@practicecluster.ma2pktt.mongodb.net/<setname>?retryWrites=true&w=majority
