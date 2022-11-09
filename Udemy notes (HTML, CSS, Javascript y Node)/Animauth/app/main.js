@@ -38,6 +38,9 @@ const getAnimals = async () => {
 		animalNode.onclick = async e => {
 			await fetch(`/animals/${animal._id}`, {
 				method: 'DELETE',
+				headers: {
+					Authorization: localStorage.getItem('jwt')
+				}
 			})
 			animalNode.parentNode.remove()
 			alert('Eliminado con éxito')
@@ -116,7 +119,6 @@ const addRegisterListener = () => {
 			errorNode.innerHTML = responseData
 		} else {
 			localStorage.setItem('jwt', `Bearer ${responseData}`)
-			console.log(response)
 			animalsPage()
 		}
 	}
@@ -186,6 +188,7 @@ const addLoginListener = () => {
 			errorNode.innerHTML = responseData
 		} else {
 			localStorage.setItem('jwt', `Bearer ${responseData}`)
+			animalsPage()
 		}
 	}
 }
