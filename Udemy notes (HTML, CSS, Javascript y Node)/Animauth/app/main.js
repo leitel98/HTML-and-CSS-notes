@@ -186,8 +186,6 @@ const addLoginListener = () => {
 			errorNode.innerHTML = responseData
 		} else {
 			localStorage.setItem('jwt', `Bearer ${responseData}`)
-			console.log(response)
-			animalsPage()
 		}
 	}
 }
