@@ -4,7 +4,7 @@ const jsonwebtoken = require('jsonwebtoken')
 const User = require('./user.model')
 
 var jwt = require('express-jwt');
-const validateJwt = jwt({ secret: process.env.SECRET, algorithms: ['HS256'] })
+const validateJwt = jwt({ secret: process.env.SECRET, algorithms: ['HS256'] })//must be set every time
 
 const signToken = _id => jsonwebtoken.sign({ _id}, process.env.SECRET)
 
